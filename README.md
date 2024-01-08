@@ -1,6 +1,6 @@
 # eCommerce API
 
-Welcome to the eCommerce API documentation. This API provides functionalities for managing users, products, reviews, and authentication. Below are the main features and endpoints available:
+Welcome to the eCommerce API. This API provides functionalities for managing users, products, reviews, and authentication. Below are the main features available:
 
 ## Features
 
