@@ -2,54 +2,64 @@
 
 Welcome to the eCommerce API documentation. This API provides functionalities for managing users, products, reviews, and authentication. Below are the main features and endpoints available:
 
-## Authentication
+## Features
 
-### SignUp
+### User Management:
 
-Create a new user account.
+1. **Sign Up:**
+    - **Description:** Create a new account with unique credentials.
 
-- **Endpoint:** `/signup`
-- **Method:** `POST`
-- **Request Body:** JSON
-  ```json
-  {
-    "username": "exampleUser",
-    "email": "user@example.com",
-    "password": "password123"
-  }
-#### Response: Newly created user details with an authentication token.
+2. **Log In:**
+    - **Description:** Securely access your account with your credentials.
 
-  
-### LogIn
+3. **Log Out:**
+    - **Description:** End your current session securely.
 
-Authenticate and log in a user.
+4. **Profile Editing:**
+    - **Description:** Modify your profile details like name, email, username, password, profile picture, and bio.
 
+5. **View User Profile:**
+    - **Description:** Retrieve user profile information.
 
-- **Endpoint:** `/login`
-- **Method:** `POST`
-- **Request Body:** JSON
-  ```json
-  {
-  "email": "user@example.com",
-  "password": "password123"
-  }
+6. **Delete Account:**
+    - **Description:** Permanently remove the user account and associated data.
 
-#### Response: User details with an authentication token.
+7. **Role-based Access Control:**
+    - **Description:** Restrict access to certain routes based on user roles.
 
-### SignUp
+### Product Management:
 
-Create a new user account.
+1. **View All Products:**
+    - **Description:** Retrieve a list of all available products.
 
-- **Endpoint:** `/change-password`
-- **Method:** `PATCH`
-- **Request Body:** JSON
-  ```json
-  {
-  "oldPassword": "currentPassword",
-  "newPassword": "newPassword123"
-  }
+2. **Create Product:**
+    - **Description:** Add a new product to the database.
 
-#### Response: User details with an updated authentication token and sending email with nodemailer.
+3. **View Product Details:**
+    - **Description:** Retrieve detailed information about a specific product.
 
+4. **Update Product Details:**
+    - **Description:** Modify details of an existing product.
 
+5. **Delete Product:**
+    - **Description:** Remove a product from the database permanently.
 
+6. **Product Statistics:**
+    - **Description:** Access statistical data related to products, such as average ratings, total sales, etc.
+
+### Reviews:
+
+1. **View All Reviews:**
+    - **Description:** Retrieve a list of all product reviews.
+
+2. **View Review Details:**
+    - **Description:** Retrieve detailed information about a specific review.
+
+3. **Create Review:**
+    - **Description:** Add a new review for a product.
+
+4. **Update Review:**
+    - **Description:** Modify an existing review.
+
+5. **Delete Review:**
+    - **Description:** Remove a review permanently.
