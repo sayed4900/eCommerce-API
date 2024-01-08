@@ -17,5 +17,22 @@ Create a new user account.
     "email": "user@example.com",
     "password": "password123"
   }
+#### Response: Newly created user details with an authentication token.
+
+  
+### LogIn
+
+Authenticate and log in a user.
+
+
+- **Endpoint:** `/login`
+- **Method:** `POST`
+- **Request Body:** JSON
+  ```json
+  {
+  "email": "user@example.com",
+  "password": "password123"
+}
+#### Response: User details with an authentication token.
 
 
