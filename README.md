@@ -32,7 +32,24 @@ Authenticate and log in a user.
   {
   "email": "user@example.com",
   "password": "password123"
-}
+  }
+
 #### Response: User details with an authentication token.
+
+### SignUp
+
+Create a new user account.
+
+- **Endpoint:** `/change-password`
+- **Method:** `PATCH`
+- **Request Body:** JSON
+  ```json
+  {
+  "oldPassword": "currentPassword",
+  "newPassword": "newPassword123"
+  }
+
+#### Response: User details with an updated authentication token and sending email with nodemailer.
+
 
 
